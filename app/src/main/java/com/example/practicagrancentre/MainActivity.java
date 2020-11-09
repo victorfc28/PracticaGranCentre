@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,27 +34,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         ImageView img = (ImageView) v;
+        Intent intent;
+        switch (img.getId()) {
 
-        switch(img.getId())
-        {
-
-            case  R.id.negocios:
-
-                break;
-            case  R.id.cartelera:
+            case R.id.negocios:
 
                 break;
-            case  R.id.transporte:
-                Intent intent = new Intent(this,Transport.class);
+            case R.id.cartelera:
+
+                break;
+            case R.id.transporte:
+                intent = new Intent(this, Transport.class);
                 startActivity(intent);
                 break;
-            case  R.id.restaurantes:
+            case R.id.restaurantes:
+                intent = new Intent(this, Restaurante.class);
+                startActivity(intent);
+                break;
+            case R.id.hoteles:
 
                 break;
-            case  R.id.hoteles:
-
-                break;
-            case  R.id.eventos:
+            case R.id.eventos:
 
                 break;
 
