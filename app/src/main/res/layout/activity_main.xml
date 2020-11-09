@@ -22,11 +22,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/business"></ImageView>
+            android:src="@drawable/business"
+            android:id="@+id/negocios"></ImageView>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/movies"></ImageView>
+            android:src="@drawable/movies"
+            android:id="@+id/cartelera"></ImageView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,11 +38,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/transport"></ImageView>
+            android:src="@drawable/transport"
+            android:id="@+id/transporte"></ImageView>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/restaurants"></ImageView>
+            android:src="@drawable/restaurants"
+            android:id="@+id/restaurantes"></ImageView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -49,11 +53,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/hotels"></ImageView>
+            android:src="@drawable/hotels"
+            android:id="@+id/hoteles"></ImageView>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/events"></ImageView>
+            android:src="@drawable/events"
+            android:id="@+id/eventos"></ImageView>
     </LinearLayout>
 
 </LinearLayout>
