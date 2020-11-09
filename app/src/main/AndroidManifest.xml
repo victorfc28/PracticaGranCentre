@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Transport"></activity>
+        <activity android:name=".Business"></activity>
+        <activity android:name=".Movies" />
+        <activity android:name=".Transport" />
         <activity android:name=".Restaurante" />
         <activity android:name=".MainActivity">
             <intent-filter>

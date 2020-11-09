@@ -4,62 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    >
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Gran Centre"
-    android:textSize="25dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="25dp"></TextView>
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Gran Centre"
+        android:textSize="25dp"></TextView>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="125dp">
+
         <ImageView
+            android:id="@+id/business"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/business"
-            android:id="@+id/negocios"></ImageView>
+            android:src="@drawable/business"></ImageView>
+
         <ImageView
+            android:id="@+id/movies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/movies"
-            android:id="@+id/cartelera"></ImageView>
+            android:src="@drawable/movies"></ImageView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
         <ImageView
+            android:id="@+id/transporte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/transport"
-            android:id="@+id/transporte"></ImageView>
+            android:src="@drawable/transport"></ImageView>
+
         <ImageView
+            android:id="@+id/restaurantes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/restaurants"
-            android:id="@+id/restaurantes"></ImageView>
+            android:src="@drawable/restaurants"></ImageView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
+
         <ImageView
+            android:id="@+id/hoteles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/hotels"
-            android:id="@+id/hoteles"></ImageView>
+            android:src="@drawable/hotels"></ImageView>
+
         <ImageView
+            android:id="@+id/eventos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/events"
-            android:id="@+id/eventos"></ImageView>
+            android:src="@drawable/events"></ImageView>
     </LinearLayout>
 
 </LinearLayout>
