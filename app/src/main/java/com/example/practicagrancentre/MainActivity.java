@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ImageView business = findViewById(R.id.business);
         ImageView movies = findViewById(R.id.movies);
-        ImageView transporte = findViewById(R.id.transporte);
+        ImageView transporte = findViewById(R.id.transportes);
         ImageView restaurantes = findViewById(R.id.restaurantes);
         ImageView hoteles = findViewById(R.id.hoteles);
         ImageView eventos = findViewById(R.id.eventos);
@@ -42,12 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
 
+
             case R.id.movies:
                 intent = new Intent(this, Movies.class);
                 startActivity(intent);
                 break;
 
-            case R.id.transporte:
+
+            case R.id.transportes:
                 intent = new Intent(this, Transport.class);
                 startActivity(intent);
                 break;
