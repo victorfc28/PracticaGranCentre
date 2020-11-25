@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Events" />
+        <activity android:name=".Event" />
         <activity android:name=".Hotel" />
         <activity android:name=".Business" />
         <activity android:name=".Movie" />

@@ -62,15 +62,15 @@ public class HotelAdapter extends BaseAdapter {
 
         // Horario
         TextView tv_horario = (TextView) v.findViewById(R.id.horario);
-        tv_horario.setText(horario);
+        // tv_horario.setText(horario);
 
         // Evento
         TextView tv_evento = (TextView) v.findViewById(R.id.evento);
-        tv_evento.setText(evento);
+        // tv_evento.setText(evento);
 
         // Lugar
         TextView tv_lugar = (TextView) v.findViewById(R.id.lugar);
-        tv_lugar.setText(lugar);
+        // tv_lugar.setText(lugar);
 
         return v;
     }
