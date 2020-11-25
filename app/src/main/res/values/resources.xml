@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filtros">
+        <item>Todos</item>
+        <item>chino</item>
+        <item>Cocina mediterranea</item>
+        <item>Gastronomia Catalana</item>
+    </string-array>
+</resources>

@@ -24,24 +24,8 @@ public class Restaurante extends AppCompatActivity implements View.OnClickListen
 
 
         /////////////////////////////spinner////////////////////
-        /*
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        String[] valores = {"uno","dos","tres","cuatro","cinco","seis", "siete", "ocho"};
-        spinner.setAdapter(new ArrayAdapter<CharSequence>(this, android.R.layout.activity_list_item, valores));
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id)
-            {
-                Toast.makeText(adapterView.getContext(), (String) adapterView.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
-            }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parent)
-            {
-                // vacio
-
-            }});*/
 
     }
 
