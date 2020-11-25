@@ -63,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/vinyam"></ImageView>
+                        android:src="@drawable/restaurants_vinyam"></ImageView>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                                     android:layout_height="75dp"
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/web1">
+                                    android:src="@drawable/ic_web">
 
                                 </ImageView>
                                 <ImageView
@@ -102,14 +102,14 @@
                                     android:layout_height="75dp"
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/tel1">
+                                    android:src="@drawable/ic_telf">
 
                                 </ImageView>
                                 <ImageView
                                     android:layout_width="75dp"
                                     android:layout_height="75dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/map1">
+                                    android:src="@drawable/ic_mapa">
 
                                 </ImageView>
                             </TableRow>
@@ -145,7 +145,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/wagaya"></ImageView>
+                        android:src="@drawable/restaurants_wagaya"></ImageView>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -172,18 +172,18 @@
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
 
-                                    android:src="@drawable/web1"></ImageView>
+                                    android:src="@drawable/ic_web"></ImageView>
                                 <ImageView
                                     android:layout_width="75dp"
                                     android:layout_height="75dp"
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/tel1"></ImageView>
+                                    android:src="@drawable/ic_telf"></ImageView>
                                 <ImageView
                                     android:layout_width="75dp"
                                     android:layout_height="75dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/map1"></ImageView>
+                                    android:src="@drawable/ic_mapa"></ImageView>
                             </TableRow>
 
 
@@ -213,7 +213,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/eltrabuc"></ImageView>
+                        android:src="@drawable/restaurants_eltrabuc"></ImageView>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -243,18 +243,18 @@
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
 
-                                    android:src="@drawable/web1"></ImageView>
+                                    android:src="@drawable/ic_web"></ImageView>
                                 <ImageView
                                     android:layout_width="75dp"
                                     android:layout_height="75dp"
                                     android:layout_marginRight="25dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/tel1"></ImageView>
+                                    android:src="@drawable/ic_telf"></ImageView>
                                 <ImageView
                                     android:layout_width="75dp"
                                     android:layout_height="75dp"
                                     android:layout_marginBottom="10dp"
-                                    android:src="@drawable/map1"></ImageView>
+                                    android:src="@drawable/ic_mapa"></ImageView>
                             </TableRow>
 
 
