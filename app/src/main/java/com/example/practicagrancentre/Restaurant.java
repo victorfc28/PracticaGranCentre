@@ -11,12 +11,12 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class Restaurante extends AppCompatActivity implements View.OnClickListener{
+public class Restaurant extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_restaurante);
+        setContentView(R.layout.activity_restaurant);
 
         ImageView retroceder = findViewById(R.id.retroceder);
         retroceder.setOnClickListener(this);

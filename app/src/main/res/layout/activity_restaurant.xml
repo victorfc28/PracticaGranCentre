@@ -45,84 +45,84 @@
 
 
             <!-- A CardView that contains a TextView -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    app:cardElevation="5dp"
-                    card_view:cardUseCompatPadding="true"
-                    android:tag="mediterraneo">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                card_view:cardUseCompatPadding="true"
+                android:tag="mediterraneo">
 
-                    <FrameLayout
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/vinyam"></ImageView>
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom"
+                        android:background="@color/transparent3">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Vinyam"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            ></TextView>
 
-                        <ImageView
+                        <TableLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:adjustViewBounds="true"
-                            android:src="@drawable/vinyam"></ImageView>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_gravity="bottom"
-                            android:background="@color/transparent3">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Vinyam"
-                                android:layout_gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="20dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                ></TextView>
-
-                            <TableLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
+                            android:layout_gravity="center"
 
 
-                                >
-                                <TableRow>
-                                    <ImageView
-                                        android:layout_width="75dp"
-                                        android:layout_height="75dp"
-                                        android:layout_marginRight="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/web1">
+                            >
+                            <TableRow>
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/web1">
 
-                                    </ImageView>
-                                    <ImageView
-                                        android:layout_width="75dp"
-                                        android:layout_height="75dp"
-                                        android:layout_marginRight="25dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/tel1">
+                                </ImageView>
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/tel1">
 
-                                    </ImageView>
-                                    <ImageView
-                                        android:layout_width="75dp"
-                                        android:layout_height="75dp"
-                                        android:layout_marginBottom="10dp"
-                                        android:src="@drawable/map1">
+                                </ImageView>
+                                <ImageView
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/map1">
 
-                                    </ImageView>
-                                </TableRow>
+                                </ImageView>
+                            </TableRow>
 
 
 
-                            </TableLayout>
+                        </TableLayout>
 
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                    </FrameLayout>
-                </androidx.cardview.widget.CardView>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
@@ -278,14 +278,14 @@
             android:id="@+id/retroceder">
 
         </ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Restaurants"
-                android:textSize="20dp"
-                android:layout_gravity="center"
-                android:textColor="@color/black">
-            </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black">
+        </TextView>
 
         <ImageView
             android:layout_width="20dp"

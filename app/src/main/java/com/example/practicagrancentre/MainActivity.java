@@ -15,20 +15,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         ImageView business = findViewById(R.id.business);
-        ImageView movies = findViewById(R.id.movies);
-        ImageView transporte = findViewById(R.id.transportes);
-        ImageView restaurantes = findViewById(R.id.restaurantes);
-        ImageView hoteles = findViewById(R.id.hoteles);
-        ImageView eventos = findViewById(R.id.eventos);
+        ImageView movie = findViewById(R.id.movie);
+        ImageView transport = findViewById(R.id.transport);
+        ImageView restaurant = findViewById(R.id.restaurant);
+        ImageView hotel = findViewById(R.id.hotel);
+        ImageView event = findViewById(R.id.event);
 
         business.setOnClickListener(this);
-        movies.setOnClickListener(this);
-        transporte.setOnClickListener(this);
-        restaurantes.setOnClickListener(this);
-        hoteles.setOnClickListener(this);
-        eventos.setOnClickListener(this);
-
-
+        movie.setOnClickListener(this);
+        transport.setOnClickListener(this);
+        restaurant.setOnClickListener(this);
+        hotel.setOnClickListener(this);
+        event.setOnClickListener(this);
     }
 
     @Override
@@ -42,31 +40,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
 
-
-            case R.id.movies:
-                intent = new Intent(this, Movies.class);
+            case R.id.movie:
+                intent = new Intent(this, Movie.class);
                 startActivity(intent);
                 break;
 
-
-            case R.id.transportes:
+            case R.id.transport:
                 intent = new Intent(this, Transport.class);
                 startActivity(intent);
                 break;
 
-            case R.id.restaurantes:
-                intent = new Intent(this, Restaurante.class);
+            case R.id.restaurant:
+                intent = new Intent(this, Restaurant.class);
                 startActivity(intent);
                 break;
 
-            case R.id.hoteles:
-
-                break;
-            case R.id.eventos:
-
+            case R.id.hotel:
+                intent = new Intent(this, Hotel.class);
+                startActivity(intent);
                 break;
 
-
+            case R.id.event:
+                intent = new Intent(this, Event.class);
+                startActivity(intent);
+                break;
         }
     }
 }

@@ -5,11 +5,4 @@
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#000000</item>
     </style>
-
-
-
-
-    <color name="colorPrimary">#FFFFFF</color>
-    <color name="colorPrimaryDark">#FF665B</color>
-    <color name="colorAccent">#2196F3</color>
 </resources>

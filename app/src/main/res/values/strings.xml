@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">PracticaGranCentre</string>
+    <string name="app_name">Gran Centre</string>
+    <string name="empty" />
+    <string name="events">Events</string>
+    <string name="hotels">Hotels</string>
+    <string name="events_button">RESERVAR ASSISTÈNCIA</string>
+    <string name="hotels_button">RESERVAR</string>
 </resources>

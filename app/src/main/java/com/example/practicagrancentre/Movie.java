@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Movies extends AppCompatActivity {
+public class Movie extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
