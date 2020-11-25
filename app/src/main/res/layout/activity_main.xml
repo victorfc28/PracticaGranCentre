@@ -5,32 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Gran Centre"
-    android:textSize="25dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="25dp"></TextView>
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gran Centre"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="125dp">
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/business"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/business"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_business" />
 
         <ImageView
-            android:id="@+id/movies"
+            android:id="@+id/movie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/movies"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_movie" />
     </LinearLayout>
 
     <LinearLayout
@@ -39,16 +42,18 @@
         android:layout_gravity="center">
 
         <ImageView
-            android:id="@+id/transportes"
+            android:id="@+id/transport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/transport"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_transport" />
 
         <ImageView
-            android:id="@+id/restaurantes"
+            android:id="@+id/restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/restaurants"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_restaurant" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,16 +62,19 @@
         android:layout_gravity="center">
 
         <ImageView
-            android:id="@+id/hoteles"
+            android:id="@+id/hotel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/hotels"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_hotel" />
 
         <ImageView
-            android:id="@+id/eventos"
+            android:id="@+id/event"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/events"></ImageView>
+            android:layout_weight="1"
+            android:src="@drawable/items_event" />
+
     </LinearLayout>
 
 </LinearLayout>
