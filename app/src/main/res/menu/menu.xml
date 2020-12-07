@@ -6,5 +6,7 @@
             android:title="Acerca de nosotros"
             android:icon="@android:drawable/ic_menu_info_details"
             app:showAsAction="never"
+            android:orderInCategory="2"
             />
+
 </menu>

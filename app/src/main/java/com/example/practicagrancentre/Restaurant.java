@@ -36,8 +36,8 @@ public class Restaurant extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
 
-        /*ImageView retroceder = findViewById(R.id.retroceder);
-        retroceder.setOnClickListener(this);*/
+        ImageView retroceder = findViewById(R.id.retroceder);
+        retroceder.setOnClickListener(this);
 
         Spinner spRestaurantes = findViewById(R.id.spinner);
         spRestaurantes.setOnItemSelectedListener(this);
@@ -228,6 +228,10 @@ public class Restaurant extends AppCompatActivity implements View.OnClickListene
             case R.id.menuAbout:
                 startActivity(new Intent(this, About.class));
                 return true;
+            case R.id.retroceder:
+
+                startActivity(new Intent(this, MainActivity.class));
+                break;
 
         }
         return true;
