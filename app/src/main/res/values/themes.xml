@@ -14,20 +14,32 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="title">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="subtitle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">54sp</item>
-        <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/orange</item>
     </style>
-    <style name="option">
+    <style name="description">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textAlignment">textStart</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="stars">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="srcCompat">@android:drawable/star_big_on</item>
     </style>
 </resources>

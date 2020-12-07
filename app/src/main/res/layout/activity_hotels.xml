@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         android:background="@color/orange" >
 
@@ -17,6 +17,7 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:scaleType="fitCenter"
             android:background="@android:color/transparent"
             app:srcCompat="@mipmap/logo_foreground" />
 
@@ -24,16 +25,15 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             style="@style/title"
             android:text="@string/hotels" />
     </LinearLayout>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <ListView
+        android:id="@+id/lvhotel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </ListView>
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.practicagrancentre;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.text.Layout;
 import android.widget.ArrayAdapter;
@@ -29,7 +30,7 @@ public class Event extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-        lv = (ListView) findViewById(R.id.lv);
+        lv = (ListView) findViewById(R.id.lvevent);
 
         EventAdapter myAdapter = new EventAdapter(this, R.layout.list_item_events, events);
         lv.setAdapter(myAdapter);

@@ -45,33 +45,33 @@ public class EventAdapter extends BaseAdapter {
         // Se infla la vista con el propio layout
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
 
-        String imagen = events[position][0];
+        String img = events[position][0];
         String url = events[position][1];
-        String categoria = events[position][1];
-        String evento  = events[position][3];
-        String lugar  = events[position][4];
-        String horario  = events[position][5];
+        String category = events[position][1];
+        String event  = events[position][3];
+        String place  = events[position][4];
+        String datetime  = events[position][5];
 
         // Valor actual según la posición
         v = layoutInflater.inflate(R.layout.list_item_events, null);
 
-        ImageView iv_imagen = (ImageView) v.findViewById(R.id.imagen);
+        ImageView iv_img = (ImageView) v.findViewById(R.id.img);
 
         // Imagen
-        int id = this.context.getResources().getIdentifier(imagen, "drawable", context.getPackageName());
-        iv_imagen.setImageResource(id);
+        int id = this.context.getResources().getIdentifier(img, "drawable", context.getPackageName());
+        iv_img.setImageResource(id);
 
         // Evento
-        TextView tv_evento = (TextView) v.findViewById(R.id.evento);
-        tv_evento.setText(evento);
+        TextView tv_event = (TextView) v.findViewById(R.id.event);
+        tv_event.setText(event);
 
         // Lugar
-        TextView tv_lugar = (TextView) v.findViewById(R.id.lugar);
-        tv_lugar.setText(lugar);
+        TextView tv_place = (TextView) v.findViewById(R.id.place);
+        tv_place.setText(place);
 
         // Horario
-        TextView tv_horario = (TextView) v.findViewById(R.id.horario);
-        tv_horario.setText(horario);
+        TextView tv_datetime = (TextView) v.findViewById(R.id.datetime);
+        tv_datetime.setText(datetime);
 
         return v;
     }

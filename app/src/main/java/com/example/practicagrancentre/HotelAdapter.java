@@ -45,32 +45,50 @@ public class HotelAdapter extends BaseAdapter {
         // Se infla la vista con el propio layout
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
 
-        String imagen = hotels[position][0];
-        String url = hotels[position][1];
+        String img = hotels[position][0];
+        String hotel = hotels[position][1];
         String stars = hotels[position][2];
-        String hotel  = hotels[position][3];
-        String direccion  = hotels[position][4];
+        String price = hotels[position][3];
+        String description = hotels[position][4];
+        String address = hotels[position][5];
 
         // Valor actual según la posición
         v = layoutInflater.inflate(R.layout.list_item_hotels, null);
 
-        ImageView iv_imagen = (ImageView) v.findViewById(R.id.imagen);
+        ImageView iv_imagen = (ImageView) v.findViewById(R.id.img);
 
         // Imagen
-        int id = this.context.getResources().getIdentifier(imagen, "drawable", context.getPackageName());
+        int id = this.context.getResources().getIdentifier(img, "drawable", context.getPackageName());
         iv_imagen.setImageResource(id);
 
-        // Horario
-        TextView tv_horario = (TextView) v.findViewById(R.id.horario);
-        // tv_horario.setText(horario);
+        // Hotel
+        TextView tv_hotel = (TextView) v.findViewById(R.id.hotel);
+        tv_hotel.setText(hotel);
 
-        // Evento
-        TextView tv_evento = (TextView) v.findViewById(R.id.evento);
-        // tv_evento.setText(evento);
+        // Description
+        TextView tv_description = (TextView) v.findViewById(R.id.description);
+        tv_description.setText(description);
 
-        // Lugar
-        TextView tv_lugar = (TextView) v.findViewById(R.id.lugar);
-        // tv_lugar.setText(lugar);
+        switch (stars) {
+            case "1":
+                ImageView tv_stars2 = (ImageView) v.findViewById(R.id.stars2);
+                tv_stars2.setVisibility(View.INVISIBLE);
+            case "2":
+                ImageView tv_stars3 = (ImageView) v.findViewById(R.id.stars3);
+                tv_stars3.setVisibility(View.INVISIBLE);
+            case "3":
+                ImageView tv_stars4 = (ImageView) v.findViewById(R.id.stars4);
+                tv_stars4.setVisibility(View.INVISIBLE);
+            case "4":
+                ImageView tv_stars5 = (ImageView) v.findViewById(R.id.stars5);
+                tv_stars5.setVisibility(View.INVISIBLE);
+            default:
+                break;
+        }
+
+        // Price
+        TextView tv_price = (TextView) v.findViewById(R.id.price);
+        tv_price.setText("desde " + price + "/per.");
 
         return v;
     }
