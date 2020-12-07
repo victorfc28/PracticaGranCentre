@@ -5,16 +5,19 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
-        android:label="Gran Centre"
+        android:label=""
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".About" android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert"></activity>
         <activity android:name=".Event" />
         <activity android:name=".Hotel" />
         <activity android:name=".Business" />
         <activity android:name=".Movie" />
         <activity android:name=".Transport" />
-        <activity android:name=".Restaurant" android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".Restaurant"
+            android:theme="@style/AppTheme" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
