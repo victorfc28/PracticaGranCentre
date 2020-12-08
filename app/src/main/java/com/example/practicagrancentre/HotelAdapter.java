@@ -105,8 +105,8 @@ public class HotelAdapter extends BaseAdapter {
                     @Override
                     public void onClick(View v) {
 
-                        Intent intent = new Intent(Intent.ACTION_CALL);
-                        intent.setData(Uri.parse(phone));
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse("tel:" + phone));
                         context.startActivity(intent);
                     }
                 }
