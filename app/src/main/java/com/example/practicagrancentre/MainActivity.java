@@ -14,15 +14,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView business = findViewById(R.id.business);
-        ImageView movie = findViewById(R.id.movie);
         ImageView transport = findViewById(R.id.transport);
         ImageView restaurant = findViewById(R.id.restaurant);
         ImageView hotel = findViewById(R.id.hotel);
         ImageView event = findViewById(R.id.event);
 
-        business.setOnClickListener(this);
-        movie.setOnClickListener(this);
         transport.setOnClickListener(this);
         restaurant.setOnClickListener(this);
         hotel.setOnClickListener(this);
@@ -34,16 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageView img = (ImageView) v;
         Intent intent;
         switch (img.getId()) {
-
-            case R.id.business:
-                intent = new Intent(this, Business.class);
-                startActivity(intent);
-                break;
-
-            case R.id.movie:
-                intent = new Intent(this, Movie.class);
-                startActivity(intent);
-                break;
 
             case R.id.transport:
                 intent = new Intent(this, Transport.class);

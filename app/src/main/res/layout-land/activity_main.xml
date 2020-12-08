@@ -4,79 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/transparent2"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gran Centre"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
 
-        <TextView
+        <ImageView
+            android:id="@+id/transport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gran Centre"
-            android:textSize="50sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp" />
+            android:layout_weight="1"
+            android:src="@drawable/items_transport" />
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/restaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp">
+            android:layout_weight="1"
+            android:src="@drawable/items_restaurant" />
 
-            <ImageView
-                android:id="@+id/business"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_business" />
-
-            <ImageView
-                android:id="@+id/movie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_movie" />
-
-            <ImageView
-                android:id="@+id/transport"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_transport" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/hotel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_weight="1"
+            android:src="@drawable/items_hotel" />
 
-            <ImageView
-                android:id="@+id/restaurant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_restaurant" />
-
-            <ImageView
-                android:id="@+id/hotel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_hotel" />
-
-            <ImageView
-                android:id="@+id/event"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/items_event"/>
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/items_event"/>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/authors" />
 
 </LinearLayout>

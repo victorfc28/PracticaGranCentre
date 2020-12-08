@@ -12,8 +12,6 @@
         <activity android:name=".About" android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert"></activity>
         <activity android:name=".Event" />
         <activity android:name=".Hotel" />
-        <activity android:name=".Business" />
-        <activity android:name=".Movie" />
         <activity android:name=".Transport" />
         <activity
             android:name=".Restaurant"

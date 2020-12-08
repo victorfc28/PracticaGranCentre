@@ -5,4 +5,5 @@
     <string name="hotels">Hotels</string>
     <string name="events_button">RESERVAR ASSISTÈNCIA</string>
     <string name="hotels_button">RESERVAR</string>
+    <string name="authors">Aplicación desarrollada por Víctor Fábregas y Álvaro Rodríguez.</string>
 </resources>
