@@ -1,12 +1,15 @@
 package com.example.practicagrancentre;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -46,7 +49,7 @@ public class EventAdapter extends BaseAdapter {
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
 
         String img = events[position][0];
-        String url = events[position][1];
+        String web = events[position][1];
         String category = events[position][1];
         String event  = events[position][3];
         String place  = events[position][4];
@@ -72,6 +75,21 @@ public class EventAdapter extends BaseAdapter {
         // Horario
         TextView tv_datetime = (TextView) v.findViewById(R.id.datetime);
         tv_datetime.setText(datetime);
+
+        // Reservar
+        Button check = (Button) v.findViewById(R.id.check);
+
+        check.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(web));
+                        context.startActivity(intent);
+                    }
+                }
+        );
 
         return v;
     }

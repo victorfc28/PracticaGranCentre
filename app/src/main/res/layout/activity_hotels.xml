@@ -14,7 +14,7 @@
         android:background="@color/orange" >
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/index"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:scaleType="fitCenter"

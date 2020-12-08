@@ -3,9 +3,12 @@ package com.example.practicagrancentre;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -13,6 +16,8 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class Event extends AppCompatActivity {
+
+    ImageButton index;
 
     private ListView lv;
     private String events[][] = {
@@ -29,6 +34,18 @@ public class Event extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
+
+        index = (ImageButton) findViewById(R.id.index);
+
+        index.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Event.this, MainActivity.class);
+                    startActivity(intent);
+                }
+            }
+        );
 
         lv = (ListView) findViewById(R.id.lvevent);
 

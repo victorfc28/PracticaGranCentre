@@ -1,14 +1,19 @@
 package com.example.practicagrancentre;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HotelAdapter extends BaseAdapter {
 
@@ -45,12 +50,14 @@ public class HotelAdapter extends BaseAdapter {
         // Se infla la vista con el propio layout
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
 
-        String img = hotels[position][0];
-        String hotel = hotels[position][1];
-        String stars = hotels[position][2];
-        String price = hotels[position][3];
-        String description = hotels[position][4];
-        String address = hotels[position][5];
+        String web = hotels[position][0];
+        String phone = hotels[position][1];
+        String img = hotels[position][2];
+        String hotel = hotels[position][3];
+        String stars = hotels[position][4];
+        String price = hotels[position][5];
+        String description = hotels[position][6];
+        String address = hotels[position][7];
 
         // Valor actual según la posición
         v = layoutInflater.inflate(R.layout.list_item_hotels, null);
@@ -89,6 +96,49 @@ public class HotelAdapter extends BaseAdapter {
         // Price
         TextView tv_price = (TextView) v.findViewById(R.id.price);
         tv_price.setText("desde " + price + "/per.");
+
+        // Phone
+        ImageButton contact_phone = (ImageButton) v.findViewById(R.id.contact_phone);
+
+        contact_phone.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(Intent.ACTION_CALL);
+                        intent.setData(Uri.parse(phone));
+                        context.startActivity(intent);
+                    }
+                }
+        );
+
+        // Web
+        ImageButton contact_web = (ImageButton) v.findViewById(R.id.contact_web);
+        Button check = (Button) v.findViewById(R.id.check);
+
+        contact_web.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(web));
+                        context.startActivity(intent);
+                    }
+                }
+        );
+
+        check.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(web));
+                        context.startActivity(intent);
+                    }
+                }
+        );
 
         return v;
     }
